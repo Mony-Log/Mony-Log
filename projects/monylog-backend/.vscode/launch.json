@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Fastapi: app dev",
+            "type": "python",
+            "request": "launch",
+            "module": "fastapi",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}${pathSeparator}src"
+            },
+            "args": [
+                "dev",
+                "src/monylog/backend/main.py",
+                "--port",
+                "8080",
+                "--host",
+                "0.0.0.0"
+            ]
+        }
+    ]
+}
